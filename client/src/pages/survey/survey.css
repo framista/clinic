@@ -1,0 +1,34 @@
+.surveycontainer {
+    display: flex;
+    height: 80vh;
+    width: 70vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.survey__stepper{
+    width: 90%;
+}
+
+.survey__buttons{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.survey__buttons button{
+    margin: 15px;
+}
+
+.stepcontent{
+    width: 60vw;
+    min-width: 200px;
+    max-height: 60vh;
+    overflow: auto;
+}

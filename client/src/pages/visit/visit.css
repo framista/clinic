@@ -1,0 +1,16 @@
+.visitcontainer {
+    display: flex;
+    height: 80vh;
+    width: 70vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.visit__form{
+    width: 90%;
+}

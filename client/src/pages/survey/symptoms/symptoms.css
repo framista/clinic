@@ -1,0 +1,22 @@
+.symptomscontainer {
+    width: 95%;
+}
+
+.symptoms__label{
+    font-size: 0.9rem;
+    margin: 5px 0 3px;
+    color: black;
+    font-weight: 500;
+}
+
+.symptoms__textarea{
+    outline: none;
+    border: 0.5px solid royalblue;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+}
+
+.symptoms__textarea:focus{
+    border: 1.5px solid royalblue;
+}

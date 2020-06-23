@@ -1,0 +1,27 @@
+.systemscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.system{
+    width: 250px;
+    margin: 20px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 0px rgba(50, 50, 105, 0.75);
+    border-radius: 15px;
+}
+
+.system h6{
+    font-size: 14px;
+    margin: 1em 0 0.5em;
+}
+
+.system__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 180px;
+}
