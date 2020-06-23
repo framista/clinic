@@ -14,6 +14,7 @@ const allergies = require('./routes/allergies');
 const diseases = require('./routes/diseases');
 const surveys = require('./routes/surveys');
 const visits = require('./routes/visits');
+const path = require('path');
 
 if (!config.get('jwtPrivateKey')) {
   console.error('FATAL ERROR: jwtPrivateKey is not defined.');
