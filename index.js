@@ -21,7 +21,7 @@ if (!config.get('jwtPrivateKey')) {
 }
 
 mongoose
-  .connect(process.env.DB, {
+  .connect(process.env.MONGO_DB || 'mongodb://localhost/clinic', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -48,5 +48,9 @@ app.use('/api/auth', auth);
 app.use('/api/authDoctor', authDoctor);
 
 const PORT = process.env.PORT || 5000;
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+}
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
