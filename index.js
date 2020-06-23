@@ -50,7 +50,10 @@ app.use('/api/authDoctor', authDoctor);
 const PORT = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
+  app.use(express.static(path.join(__dirname, '../client/build')));
+  app.get('*', (req, res) =>
+    res.sendFile(path.resolve('../client', 'build', 'index.html'))
+  );
 }
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
