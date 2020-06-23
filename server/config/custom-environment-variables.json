@@ -1,0 +1,5 @@
+  
+{
+    "jwtPrivateKey": "clinic_jwtPrivateKey",
+    "db": "clinic"
+  }
